@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>LOTERIA</title>
+	<meta charset="utf-8" />
+    <link href="//fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+    <link rel="stylesheet" href="/_lib/bootstrap/slate/bootstrap.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="/_lib/jquery/jquery-1.11.1.min.js"></script>
+    <script src="/_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/_lib/angular/angular.min.js"></script>
+    <script src="./_lib/angular/angular-animate.js"></script>
+</head>
+<body>
+    <div class="container" ng-app="appLoteria" ng-controller="ctrlLoteria">
+        <h1>Loteria</h1>
+        <div class="col-sm-4">
+            <div>
+                <textarea class="form-control lista" ng-model="osobyTxt"></textarea>
+            </div>
+            <a href="#" class="btn btn-default" ng-click="Sortowanie()">Reset</a>
+        </div>
+        <div class="col-sm-8">
+            <div class="box-container">
+                <div class="box-bg"></div>
+                <div class="box-border">
+                    <div class="box-center">
+                        <ul class="beben-kola">
+                            <li ng-repeat="x in osobyBeben track by $index">{{x}}</li>
+                        </ul>
+                    </div>
+                    <a class="box-arrow box-arrow-left"></a>
+                    <a class="box-arrow box-arrow-right"></a>
+                    <a class="btn btn-success btn-lg btn-start" ng-click="StartLosowanie()">START</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <small><b>&copy; 2017 <a id="autor" href="#">Karol Gromek</a></b></small>
+        <div class="modal" role="dialog">
+            <div class="modal-dialog" style="width:900px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"><b>MARV</b></h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="marv" width="853" height="480" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

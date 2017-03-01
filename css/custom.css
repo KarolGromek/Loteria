@@ -1,0 +1,104 @@
+﻿h1 {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size:4em;
+    text-align:center;
+    text-shadow: 0 0 20px #fff;
+}
+.informacja {
+    margin-top:10px;
+}
+textarea.lista {
+    height:400px;
+    margin:20px 0;
+    color:#fff;
+    background-color: inherit;
+    border:0;
+    border-radius:15px;
+    box-shadow: 0px 0px 10px 5px #888888 inset, 0px 0px 10px 5px #888888;
+}
+footer {
+    text-align:center;
+    padding:10px 0;
+}
+footer small b {
+    text-shadow: 0 0 10px #fff;
+}
+.box-container {
+    position:relative;
+    height:450px;
+}
+.box-bg{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:.3;
+    background: url(../img/logo_big.png) no-repeat center;
+}
+.box-border {
+    position:absolute;
+    top:20px;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    z-index:1;
+    overflow:hidden;
+    border:solid 0 #000;
+    border-radius:20px;
+    box-shadow: 0px 0px 20px 5px #888888 inset, 0px 0px 20px 5px #888888;
+}
+.box-center {
+    position:absolute;
+    top:50%;
+    overflow:visible;
+    left:0;
+    right:0;
+}
+.box-arrow {
+    position:absolute;
+    top:50%;
+    transform:translateY(-10px);
+}
+.box-arrow-left {
+    left:-15px;
+    border-top: 15px solid transparent;
+	border-left: 30px solid #f00;
+	border-bottom: 15px solid transparent;
+}
+.box-arrow-right {
+    right:-15px;
+    border-top: 15px solid transparent;
+	border-right: 30px solid #f00;
+	border-bottom: 15px solid transparent;
+}
+.btn-start {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.beben-kola {
+    position:absolute;
+    left:0;
+    right:0;
+    top:1000px;
+    transform:translateY(-61px);
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    -webkit-transition: top 10s;
+    transition: top 10s;
+}
+.beben-kola li {
+    padding:20px;
+    text-align:center;
+    font-size:4em;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    border:1px solid #000;
+    border-radius:25px;
+    box-shadow: 0px 0px 20px 5px #888888 inset;
+    color:#fff;
+}
