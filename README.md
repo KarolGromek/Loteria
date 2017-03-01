@@ -1,0 +1,2 @@
+# Loteria
+Narzędzie do losowania
